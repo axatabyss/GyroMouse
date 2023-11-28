@@ -1,10 +1,11 @@
-package com.axat.gyromouse.core
+package com.axat.gyromouse.core.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.axat.gyromouse.core.navigation.NavigationRoutes
+import com.axat.gyromouse.feature.screen.GyroScreen
 import com.axat.gyromouse.feature.screen.HomeScreen
 
 
@@ -17,6 +18,9 @@ fun AppNavigation() {
     NavHost(navController = navController, startDestination = NavigationRoutes.HomeRoute) {
         composable(route = NavigationRoutes.HomeRoute) {
             HomeScreen(navController = navController)
+        }
+        composable(route = NavigationRoutes.GyroRoute) {
+            GyroScreen(navController = navController)
         }
     }
 }

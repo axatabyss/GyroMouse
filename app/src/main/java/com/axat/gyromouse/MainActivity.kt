@@ -7,9 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import androidx.navigation.compose.rememberNavController
-import com.axat.gyromouse.core.AppNavigation
-import com.axat.gyromouse.feature.screen.HomeScreen
+import com.axat.gyromouse.core.navigation.AppNavigation
 import com.axat.gyromouse.ui.theme.GyroMouseTheme
 
 class MainActivity : ComponentActivity() {
